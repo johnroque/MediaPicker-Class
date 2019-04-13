@@ -97,12 +97,9 @@
 		4A57517022626D16002A630B /* MediaPicker */ = {
 			isa = PBXGroup;
 			children = (
-				4A57517122626D16002A630B /* AppDelegate.swift */,
-				4A57517322626D16002A630B /* ViewController.swift */,
-				4A57517522626D16002A630B /* Main.storyboard */,
-				4A57517822626D19002A630B /* Assets.xcassets */,
-				4A57517A22626D19002A630B /* LaunchScreen.storyboard */,
-				4A57517D22626D19002A630B /* Info.plist */,
+				4A5751A122626FF7002A630B /* App */,
+				4A5751A022626FEF002A630B /* Supporting Files */,
+				4A57519F22626FE2002A630B /* Resources */,
 			);
 			path = MediaPicker;
 			sourceTree = "<group>";
@@ -123,6 +120,57 @@
 				4A57519322626D19002A630B /* Info.plist */,
 			);
 			path = MediaPickerUITests;
+			sourceTree = "<group>";
+		};
+		4A57519F22626FE2002A630B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A57517822626D19002A630B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A5751A022626FEF002A630B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A57517D22626D19002A630B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A5751A122626FF7002A630B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4A5751A22262700C002A630B /* Story */,
+				4A57517122626D16002A630B /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4A5751A22262700C002A630B /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				4A5751A422627044002A630B /* Launch */,
+				4A5751A32262703F002A630B /* Main */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		4A5751A32262703F002A630B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4A57517322626D16002A630B /* ViewController.swift */,
+				4A57517522626D16002A630B /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4A5751A422627044002A630B /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				4A57517A22626D19002A630B /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNZ5Z4EKKR;
-				INFOPLIST_FILE = MediaPicker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MediaPicker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNZ5Z4EKKR;
-				INFOPLIST_FILE = MediaPicker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MediaPicker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
