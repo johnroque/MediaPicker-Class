@@ -78,19 +78,24 @@ class MediaPickerService: NSObject, MediaPickerServicing {
 extension MediaPickerService {
     
     private func didSelectFromCamera(_ action: UIAlertAction) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .camera
-        imagePicker.delegate = self
-        imagePicker.mediaTypes = [kUTTypeImage, kUTTypeMovie] as [String]
-        viewController?.present(imagePicker, animated: true, completion: nil)
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = .camera
+            imagePicker.delegate = self
+            imagePicker.mediaTypes = [kUTTypeImage, kUTTypeMovie] as [String]
+            viewController?.present(imagePicker, animated: true, completion: nil)
+        }
     }
     
     private func didSelectFromGallery(_ action: UIAlertAction) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.delegate = self
-        imagePicker.mediaTypes = [kUTTypeImage, kUTTypeMovie] as [String]
-        viewController?.present(imagePicker, animated: true, completion: nil)
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.delegate = self
+            imagePicker.mediaTypes = [kUTTypeImage, kUTTypeMovie] as [String]
+            
+            viewController?.present(imagePicker, animated: true, completion: nil)
+        }
     }
     
     private func didCancel(_ action: UIAlertAction) {
