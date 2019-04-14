@@ -14,6 +14,7 @@
 		4A57517C22626D19002A630B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A57517A22626D19002A630B /* LaunchScreen.storyboard */; };
 		4A57518722626D19002A630B /* MediaPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57518622626D19002A630B /* MediaPickerTests.swift */; };
 		4A57519222626D19002A630B /* MediaPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57519122626D19002A630B /* MediaPickerUITests.swift */; };
+		4A5751A72262EEBD002A630B /* MediaPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5751A62262EEBD002A630B /* MediaPickerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4A57518D22626D19002A630B /* MediaPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A57519122626D19002A630B /* MediaPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerUITests.swift; sourceTree = "<group>"; };
 		4A57519322626D19002A630B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A5751A62262EEBD002A630B /* MediaPickerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +143,9 @@
 		4A5751A122626FF7002A630B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				4A5751A22262700C002A630B /* Story */,
 				4A57517122626D16002A630B /* AppDelegate.swift */,
+				4A5751A52262EEB2002A630B /* Services */,
+				4A5751A22262700C002A630B /* Story */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -171,6 +174,14 @@
 				4A57517A22626D19002A630B /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		4A5751A52262EEB2002A630B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4A5751A62262EEBD002A630B /* MediaPickerService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A57517422626D16002A630B /* ViewController.swift in Sources */,
+				4A5751A72262EEBD002A630B /* MediaPickerService.swift in Sources */,
 				4A57517222626D16002A630B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
